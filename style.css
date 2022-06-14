@@ -2,35 +2,35 @@ body {
     display: grid;
     place-content: center;
     height: 100vh;
-    background-color: white;
+    background-color: burlywood;
 }
 .container { 
     height: 200px;
     width: 200px;
-    box-shadow: inset -7px -3px 10px #02020273,
+    box-shadow: inset -6px -3px 10px #ffffff73,
         inset 10px 3px 10px rgb(94, 104, 121, 0.288);
 }
-.clock::after{
+.clock::after {
     position: absolute;
     left: 10%;
     top: 10%;
-    content: " ";
+    content: "  ";
     height: 80%;
     width: 80%;
     background-color: transparent;
-    box-shadow: inset -5px -3px 10px #a8585873,
-        inset 10px 3px 10px rgba(138, 148, 165, 0.288);
+    box-shadow: inset -5px -3px 10px #ffffff73,
+        inset 10px 3px 10px rgb(94, 104, 121, 0.288);
     border-radius: 50%;
 }
 .clock  {
     height: 90% ;
     width: 90% ;
-    background-color: #565a56;
+    background-color: #dde1dd;
     border-radius: 50%; 
     position: relative;
     left: 10px;
     top: 10px;
-    box-shadow: -10px -5px 10px #ffffff73,
+    box-shadow: -10px -7px 10px #ffffff73,
         10px 6px 15px rgb(94, 104, 121, 0.288);
     display: flex;
     justify-content: space-evenly;
@@ -40,26 +40,35 @@ body {
 }
 .hours {
     position: absolute;
-    font-size: 90%;
-    height: 100%;
+    font-size: 80%;
+    height: 101%;
     font-weight: bold;
 }
 .arms {
     transform-origin: bottom;
-    background-color: rgb(42d, 42, 42);
+    background-color: rgb(42, 42, 42);
     position: absolute;
-    top: 30px;
-    width: 5px;
-    height: 35px;
-
-    border-radius: 20px;
-    box-shadow: 3px 7px 10px 0.1px rgb(17, 17, 17);
+    top: 20px;
+    width: 4px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 4px 7px 10px 0.2px rgb(145, 143, 143);
 }
 .hours-arm {
-    height: 25%;
-    top: 50px;
+    height: 20%;
+    top: 52px;
 }
 .sec {
-    height: 36%;
-    top: 27%;
+    height: 35%;
+    top: 14%;
+}
+.min{
+    height: 32%;
+    top: 17%;  
+}
+.numer {
+    position: absolute;
+    font-size: 80%;
+    height: 112%;
+    font-weight: bold;
 }
